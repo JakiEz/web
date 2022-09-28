@@ -23,13 +23,15 @@ h1 {
 .pic {
   width: 400px;
   height: 250px;
-  padding: 20px;
+  padding-right: 20px;
   box-shadow: -10px 5px 10px grey;
   top: 0;
-  transition: top ease 0.5s;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 1s;
 }
 .pic:hover {
-  top: -50px;
+ transform: scale(1.1, 1.1);
 }
 
 .box {
