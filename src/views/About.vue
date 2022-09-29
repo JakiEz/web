@@ -22,4 +22,8 @@ export default {
 box {
   text-align: left;
 }
+.pic {
+  width: 100px;
+  height: 100px;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bigbox">
     <h1>Certificate</h1>
     <div class="box">
       <img class="pic" src="../pic/c.jpg" />
@@ -20,23 +20,29 @@ h1 {
   font-family: "Courier New";
   color: rgba(38, 41, 37, 0.849);
 }
+.bigbox {
+  align-content: center;
+}
 .pic {
   width: 400px;
   height: 250px;
-  padding: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 10px;
   box-shadow: -10px 5px 10px grey;
   top: 0;
-  transition: top ease 0.5s;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 1s;
 }
 .pic:hover {
-  top: -50px;
+  transform: scale(1.1, 1.1);
 }
 
 .box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   padding-top: 20px;
+  vertical-align: middle;
 }
 </style>

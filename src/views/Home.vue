@@ -7,20 +7,26 @@
             <h1 class="title">My Profile</h1>
             <img class="pic" src="../pic/jackieongrass.jpg" />
           </div>
+          <div class="info">
+            <h2 style="font-family: Sans-serif">Infomation</h2>
+            <hr />
+            <div class="contentinfo">
+              <ul class="listinfo">
+                <li>Name: Jedsarid Sangsuwan</li>
+                <li>Age : 17 School</li>
+                <li>School : Suankularbwitayalairangsit</li>
+              </ul>
+            </div>
+          </div>
+
           <div class="boxicon">
-            <Text>Contact :</Text>
-            <ul>
-              <li>
-                <a href="https://www.instagram.com/jackienyyy/">
-                  <img class="icon" src="../pic/ig.png" />
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/jedsarid.sangsuwan.3/">
-                  <img class="icon" src="../pic/facebook.png" />
-                </a>
-              </li>
-            </ul>
+            <h3>Contact</h3>
+            <a href="https://www.instagram.com/jackienyyy/">
+              <img class="icon" src="../pic/ig.png" />
+            </a>
+            <a href="https://www.facebook.com/jedsarid.sangsuwan.3/">
+              <img class="icon" src="../pic/facebook.png" />
+            </a>
           </div>
         </div>
       </header>
@@ -110,32 +116,39 @@
   transition-property: transform;
   transition-duration: 1s;
 }
-
+.listinfo {
+  padding-left: 60px;
+}
 .boxicon:hover {
   transform: scale(1.1, 1.1);
 }
 
-li {
+/* li {
   display: inline;
-}
+} */
 
 .icon {
   width: 50px;
   height: 50px;
-  padding: 20px;
+  padding: 10px;
 
   /* align-self: flex-start; */
 }
-
 .icon:hover {
   transform: scale(1.1, 1.1);
 }
-
+.info {
+  text-align: center;
+  position: relative;
+  align-items: center;
+}
+.contentinfo {
+  text-align: left;
+}
 .pic {
-  width: 900px;
-  height: 1100px;
+  width: 300px;
+  height: 400px;
   border-radius: 15px;
-  z-index: -1;
 }
 
 .boxpro {
@@ -151,7 +164,6 @@ li {
 }
 
 .bigbox {
-  align-content: center;
-  align-items: center;
+  text-align: center;
 }
 </style>
